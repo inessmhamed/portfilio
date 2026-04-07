@@ -1,0 +1,119 @@
+.skill-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 16px 20px;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.skill-card:hover {
+  /* Removed static hover effects - now handled dynamically */
+}
+
+.skill-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.skill-top h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.skill-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.skill-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 8px;
+  display: block;
+  box-shadow: 0 10px 18px rgba(30, 60, 130, 0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transform-origin: center;
+}
+
+.emoji-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background: linear-gradient(135deg, #eaf2ff 0%, #dbe8fe 100%);
+  color: #1e3a8a;
+  font-weight: 800;
+}
+
+.skill-icon:hover {
+  /* Removed static hover effects - now handled dynamically */
+}
+
+.skill-label h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.skill-label p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+
+.skill-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.strength-label {
+  font-size: 0.75rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.strength-stars {
+  display: flex;
+  gap: 5px;
+}
+
+.strength-stars span {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: #e2e8f0;
+  transition: background 0.3s ease;
+}
+
+.strength-stars span.filled {
+  background: currentColor;
+}
+
+
+.rating-dots.bg-blue-500 { color: #3b82f6; }
+.rating-dots.bg-green-500 { color: #22c55e; }
+.rating-dots.bg-purple-500 { color: #8b5cf6; }
+.rating-dots.bg-orange-500 { color: #f59e0b; }
+
+@media (max-width: 768px) {
+  .skill-card {
+    padding: 14px;
+  }
+  .skill-top h4 {
+    font-size: 1.025rem;
+  }
+}

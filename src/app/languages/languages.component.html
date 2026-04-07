@@ -1,0 +1,23 @@
+<section id="languages" class="section section-alt py-16 px-3 md:px-10 lg:px-10">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-20" style="color: #19236e;">{{ translationService.translate('navbar.languages') }}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+      <div class="language-card" *ngFor="let lang of languages">
+        <div class="language-header">
+          <img [src]="lang.flag" alt="{{ lang.name }} flag" class="language-flag" />
+          <div>
+            <h3 class="language-name">{{ lang.name }}</h3>
+            <p class="language-country">{{ lang.country }}</p>
+          </div>
+        </div>
+        <p class="language-proficiency">{{ lang.proficiency }}</p>
+        <div class="proficiency-container">
+          <div class="proficiency-bar">
+            <div class="proficiency-fill" [style.width.%]="lang.level"></div>
+          </div>
+          <span class="proficiency-text">{{ lang.level }}%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

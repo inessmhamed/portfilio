@@ -1,0 +1,87 @@
+section#education {
+  padding: 3rem 1.5rem;
+  background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+section#education h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: #0f172a;
+  text-align: center;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+}
+
+.info-card {
+  border-radius: 1.2rem;
+  color: white;
+  min-height: 200px;
+  padding: 1.3rem;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.info-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.24), rgba(15, 23, 42, 0.6));
+  z-index: 0;
+}
+
+.info-card h3,
+.info-card span,
+.info-card p {
+  position: relative;
+  z-index: 1;
+}
+
+.info-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.45rem;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+.info-card span{
+    color: #000000;
+}
+.info-card span,
+.info-card p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0.96;
+}
+
+.engineering-card {
+  background-image: url('../../assets/epi.jpg');
+}
+
+.applied-card {
+  background-image: url('../../assets/iset.png');
+}
+
+.baccalaureate-card {
+  background-image: url('../../assets/lycee.jpeg');
+}
+
+@media (max-width: 768px) {
+  section#education h2 {
+    font-size: 2rem;
+  }
+
+  .info-card {
+    min-height: 210px;
+  }
+}

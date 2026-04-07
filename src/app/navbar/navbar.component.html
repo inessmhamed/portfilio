@@ -1,0 +1,26 @@
+<nav class="navbar">
+  <div class="brand-container">
+    <img src="assets/iness.jpeg" alt="Mhamed Ines" class="brand-avatar">
+    <a class="brand" href="#">Ines</a>
+  </div>
+  <div class="nav-content">
+    <ul class="nav-links">
+      <li><a (click)="scrollToSection('about')" class="cursor-pointer">{{ translationService.translate('navbar.about') }}</a></li>
+      <li><a (click)="scrollToSection('experience')" class="cursor-pointer">{{ translationService.translate('navbar.experience') }}</a></li>
+      <li><a (click)="scrollToSection('skills')" class="cursor-pointer">{{ translationService.translate('navbar.skills') }}</a></li>
+      <li><a (click)="scrollToSection('education')" class="cursor-pointer">{{ translationService.translate('navbar.education') }}</a></li>
+      <li><a (click)="scrollToSection('languages')" class="cursor-pointer">{{ translationService.translate('navbar.languages') }}</a></li>
+      <li><a (click)="scrollToSection('interests')" class="cursor-pointer">{{ translationService.translate('navbar.interests') }}</a></li>
+      <li><a (click)="scrollToSection('contact')" class="cursor-pointer">{{ translationService.translate('navbar.contact') }}</a></li>
+    </ul>
+    <div class="language-switch">
+      <button type="button" class="flag-btn" [class.active]="isActiveLang('fr')" (click)="setLanguage('fr')">
+        <img src="https://flagcdn.com/w80/fr.png" alt="FR" class="flag-icon">
+      </button>
+      <button type="button" class="flag-btn" [class.active]="isActiveLang('en')" (click)="setLanguage('en')">
+        <img src="https://flagcdn.com/w80/us.png" alt="EN" class="flag-icon">
+      </button>
+    </div>
+  </div>
+ 
+</nav>

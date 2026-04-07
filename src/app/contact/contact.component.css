@@ -1,0 +1,70 @@
+.contact-section {
+  padding: 20px 20px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #80b6edc2, #f1a6eeb1);
+}
+
+/* Wrapper */
+.contact-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Title */
+.contact-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: #19236e;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle */
+.contact-subtitle {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+/* Card (glass effect like hero buttons) */
+.contact-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  padding: 2rem;
+}
+
+/* Contact item */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.9rem 1.5rem;
+  border-radius: 999px;
+
+  font-weight: 500;
+  text-decoration: none;
+
+  color: #1e293b;
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover = same vibe as hero buttons */
+.contact-item:hover {
+  transform: translateY(-3px) scale(1.03);
+  background: linear-gradient(to right, #19236e, #ed3adb);
+  color: white;
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+}
+
+.icon {
+  font-size: 1.2rem;
+}

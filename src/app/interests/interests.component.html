@@ -1,0 +1,13 @@
+<section id="interests" class="section py-16 px-6 md:px-12 lg:px-20 bg-[#fff8f8]">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-10">Interests</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+      <article class="interest-card" *ngFor="let interest of interests" [ngClass]="interest.backgroundClass">
+        <div class="interest-content">
+          <h3>{{ interest.title }}</h3>
+          <p>{{ interest.description }}</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,10 @@
+<section id="education" class="section">
+  <h2 class="text-4xl md:text-5xl font-bold text-center mb-16" style="color: #19236e;">{{ translationService.translate('education.title') }}</h2>
+  <div class="cards-grid mt-10">
+    <article class="info-card" *ngFor="let item of educationItems" [ngClass]="item.cardClass">
+      <h3>{{ item.title }}</h3>
+      <span>{{ item.institution }}</span>
+      <p>{{ item.period }}</p>
+    </article>
+  </div>
+</section>
