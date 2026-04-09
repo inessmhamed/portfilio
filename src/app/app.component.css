@@ -309,7 +309,7 @@
 .icon-right.icon9 { top: 90%; right: 2%; }
 .iconss {
   width: 55px;          /* un peu plus grand */
-  opacity: 0.5;         /* 👈 plus visible */
+  opacity: 0.2;         /* 👈 plus visible */
   filter: none;         /* enlever tout flou éventuel */
   animation: float 20s ease-in-out infinite;
 }
@@ -340,4 +340,15 @@
 
 .iconss {
   animation: floatZigzag 20s ease-in-out infinite;
+}
+@media (max-width: 768px) {
+  .iconss {
+    width: 35px; /* smaller size for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .iconss {
+    width: 25px; /* even smaller on very small screens */
+  }
 }
