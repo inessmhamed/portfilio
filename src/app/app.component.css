@@ -277,3 +277,67 @@
 .contact-info a:hover {
   text-decoration: underline;
 }
+.background-icons {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+/* LEFT SIDE */
+.icon-left {
+  position: absolute;
+  left: 4%;
+}
+
+/* RIGHT SIDE */
+.icon-right {
+  position: absolute;
+  right: 2%;
+}
+.icon-left.icon1 { top: 10%; left: 2%; }
+.icon-left.icon2 { top: 30%; left: 10%; }
+.icon-left.icon3 { top: 50%; left: 2%; }
+.icon-left.icon4 { top: 80%; left: 8%; }
+
+.icon-right.icon5 { top: 15%; right: 2%; }
+.icon-right.icon6 { top: 35%; right: 8%; }
+.icon-right.icon7 { top: 55%; right: 2%; }
+.icon-right.icon8 { top: 75%; right: 10%; }
+.icon-right.icon9 { top: 90%; right: 2%; }
+.iconss {
+  width: 55px;          /* un peu plus grand */
+  opacity: 0.5;         /* 👈 plus visible */
+  filter: none;         /* enlever tout flou éventuel */
+  animation: float 20s ease-in-out infinite;
+}
+
+/* different speeds = natural */
+.icon1 { animation-duration: 18s; }
+.icon2 { animation-duration: 22s; }
+.icon3 { animation-duration: 20s; }
+.icon4 { animation-duration: 24s; }
+
+.icon5 { animation-duration: 19s; }
+.icon6 { animation-duration: 23s; }
+.icon7 { animation-duration: 21s; }
+.icon8 { animation-duration: 25s; }
+.icon9 { animation-duration: 27s; }
+
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-25px); }
+  100% { transform: translateY(0px); }
+}
+@keyframes floatZigzag {
+  0%   { transform: translate(0px, 0px); }
+  50%  { transform: translate(8px, -25px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.iconss {
+  animation: floatZigzag 20s ease-in-out infinite;
+}
